@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "cypress": "cypress open"
+    "lint": "next lint",
+    "cypress": "cypress open",
+    "code-coverage": "npx nyc report --reporter=text-summary"
   },
   "dependencies": {
     "next": "13.0.0",
@@ -14,9 +16,14 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@cypress/code-coverage": "^3.10.0",
     "@types/node": "18.11.7",
     "@types/react": "18.0.24",
+    "@types/react-dom": "18.0.8",
     "cypress": "^10.11.0",
+    "eslint": "8.26.0",
+    "eslint-config-next": "13.0.2",
+    "swc-plugin-coverage-instrument": "^0.0.13",
     "typescript": "4.8.4"
   }
 }
